@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(13, 3, 48);;
+}
+
+
+header {
+    background-color: rgb(13, 3, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h1- {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+.logo-area img {
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu a {
+    position: relative;
+    text-decoration: none;
+}
+
+/* Linha animada */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 3px;
+    background-color:deeppink;
+
+    transition: width 0.3s ease;
+}
+
+/* Quando passar o mouse */
+.menu a:hover::after {
+    width: 100%;
+}
+.botao-conta,
+.botao-entrar {
+    width: 200px;
+    height: 48px;
+    box-sizing: border-box;
+
+    margin-left: 30px;
+    background-color: rgb(4, 199, 253);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 0px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botao-conta:hover,
+.botao-entrar:hover {
+    background-color: rgb(110, 4, 250);
+    box-shadow: 0 0 15px #00C4F7;
+    transform: translateY(-3px);
+}
+.descricao {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    font-size: 47px;
+    margin-top: 2px;
+}
+.botao-whatsapp {
+    width: 300px;
+    height: 48px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    margin: 15px auto 0 auto;
+    margin-top: 100px;
+    position: relative;
+    left: auto;
+    right: auto;
+
+    background-color: rgb(4, 199, 253);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 46px 67px;
+
+    font-size: 27px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+.botao-whatsapp:hover {
+    background-color: rgb(110, 4, 250);
+    box-shadow: 0 0 15px #00C4F7;
+    transform: translateY(-3px);
+}
+.rodape {
+    background-color: rgb(13, 3, 48);
+    color: white;
+    font-size: larger;
+    margin-top: 300px;
+    font-size: 15px;
+}
